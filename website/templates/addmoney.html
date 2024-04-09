@@ -1,0 +1,13 @@
+{% extends "login.html" %} {% block title %}Manager{% endblock %} {% block content
+%}
+<h1 align="center">Manager</h1>
+<form method="POST" action="/addmoney">
+    <input type="number" placeholder="amount" name="amount" id="amount" class="form-control"></input>
+    <br />
+    <input type="id" placeholder="id" name="id" id="id" class="form-control"></input>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Submit </button>
+    </div>
+</form>
+{% endblock %}

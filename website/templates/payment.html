@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">PAYMENT</h1>
+
+<form method="POST" action="/payment">
+    <div class="form-group">
+        <label for="id">SENDER ID</label>
+        <input type="number" class="form-control" id="id" name="id" placeholder="Enter sender id" />
+    </div>
+
+    <div class="form-group">
+        <label for="amount">AMOUNT</label>
+        <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" />
+    </div>
+    <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <input type="text" class="form-control" id="password" name="password" placeholder="Enter password" />
+    </div>
+
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Submit </button>
+    </div>
+</form>
+
+{% endblock %}
